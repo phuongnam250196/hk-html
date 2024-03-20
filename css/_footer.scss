@@ -1,11 +1,20 @@
 #footer {
     text-align: center;
     padding: 28px 0 58px;
+
+    .img {
+      width: 265px;
+    }
     p {
       font-size: 15px;
       margin: 0;
       line-height: 24px;
       font-weight: 400;
       padding-top: 16px;
+      color: var(--c-text);
+
+      &.copy-right {
+        padding-top: 60px;
+      }
     }
 }
