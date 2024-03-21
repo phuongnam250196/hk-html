@@ -69,6 +69,11 @@ p {
     justify-content: center;
     width: 100%; }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
 #header {
   padding: 17px 58px; }
   #header .container-fluid {
@@ -168,6 +173,28 @@ p {
     #footer p.copy-right {
       padding-top: 60px; }
 
+#vehicle {
+  background-color: var(--c-pink);
+  padding: 60px 0; }
+  #vehicle .title-group {
+    margin-bottom: 60px; }
+    #vehicle .title-group .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--c-main); }
+    #vehicle .title-group .desc-bold {
+      font-size: 33px;
+      font-weight: bold;
+      color: var(--c-main); }
+    #vehicle .title-group .desc {
+      font-size: 15px;
+      color: var(--c-main); }
+  #vehicle .owl-vehicle .item .txt {
+    color: var(--c-text);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px; }
+
 #transport {
   padding: 60px 0; }
   #transport .box {
@@ -204,9 +231,9 @@ p {
 
 #damage {
   background: url(./../imgs/banner-cat.png) no-repeat;
-  background-position: right;
-  background-size: contain;
-  padding: 20px; }
+  background-position: top right;
+  background-size: cover;
+  padding: 40px 0; }
   #damage .box {
     display: grid;
     grid-template-columns: 396px 1fr;
@@ -220,6 +247,60 @@ p {
         object-fit: cover; }
     #damage .box .right .title-base {
       text-align: left; }
+
+#greet {
+  position: relative; }
+  #greet::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 633px solid var(--c-pink);
+    border-left: 0px solid transparent;
+    border-right: 325px solid transparent;
+    height: 0;
+    width: 60%; }
+  #greet .container-c {
+    position: relative;
+    z-index: 1; }
+  #greet .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
+    z-index: 1; }
+    #greet .box .left .desc {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--c-main);
+      margin-bottom: 24px; }
+    #greet .box .left .title {
+      font-weight: 700;
+      font-size: 33px;
+      color: var(--c-main);
+      margin-bottom: 32px; }
+    #greet .box .left .content {
+      font-size: 15px;
+      color: var(--c-text);
+      white-space: pre-line; }
+    #greet .box .left .signature {
+      padding-top: 60px;
+      display: flex;
+      justify-content: flex-end; }
+      #greet .box .left .signature .sig-t {
+        font-size: 15px;
+        color: var(--c-text);
+        white-space: pre-line; }
+      #greet .box .left .signature .sig-img {
+        width: 214px; }
+    #greet .box .right .img {
+      width: 502px;
+      height: 605px; }
+  #greet .title-service-trust {
+    color: var(--c-green);
+    font-size: 64px;
+    font-family: 'Roboto';
+    white-space: pre-line; }
 
 #company {
   padding-top: 120px; }
@@ -296,7 +377,55 @@ p {
   background-color: var(--c-green-2);
   padding: 60px 0; }
   #contact .box {
-    padding: 0 100px; }
+    width: 639px;
+    margin: 0 auto; }
+    #contact .box .box-title {
+      text-align: center; }
+      #contact .box .box-title .title {
+        margin-bottom: 37px; }
+      #contact .box .box-title .desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 0;
+        white-space: pre-line;
+        margin-bottom: 25px; }
+        #contact .box .box-title .desc br {
+          display: none; }
+      #contact .box .box-title .ul {
+        background-color: var(--c-white);
+        border-radius: 4px;
+        padding: 17px 13px;
+        text-align: left;
+        list-style-position: inside;
+        margin-bottom: 38px; }
+        #contact .box .box-title .ul li {
+          font-size: 13px;
+          line-height: 22px;
+          font-weight: 400; }
+    #contact .box .form .form-item {
+      margin-bottom: 32px; }
+      #contact .box .form .form-item .group {
+        display: flex;
+        justify-content: space-between;
+        gap: 17px; }
+        #contact .box .form .form-item .group .child {
+          width: 50%; }
+    #contact .box .form .form-label {
+      font-weight: 700;
+      margin-bottom: 7px;
+      line-height: 1; }
+      #contact .box .form .form-label .required {
+        color: var(--c-red); }
+    #contact .box .form .form-control {
+      height: 41px;
+      border: 1px solid var(--c-gray-3);
+      background-color: var(--c-white);
+      border-radius: 4px; }
+      #contact .box .form .form-control:focus {
+        box-shadow: unset; }
+      #contact .box .form .form-control.wpcf7-textarea {
+        height: 122px; }
     #contact .box .form .btn-contact {
       width: 293px;
       height: 73px;
@@ -307,6 +436,61 @@ p {
       justify-content: center;
       align-items: center;
       font-size: 22px;
-      font-weight: bold; }
+      font-weight: bold;
+      margin: 0 auto; }
+      #contact .box .form .btn-contact:hover {
+        color: var(--c-gray);
+        background-color: var(--c-text); }
+  @media (max-width: 767.98px) {
+    #contact {
+      padding: 66px 0 40px; }
+      #contact .box {
+        width: 100%;
+        margin: 0 auto; }
+        #contact .box .box-title {
+          text-align: center; }
+          #contact .box .box-title .title {
+            margin-bottom: 29px; }
+          #contact .box .box-title .desc {
+            margin: 0 auto 22px; }
+            #contact .box .box-title .desc br {
+              display: block; }
+          #contact .box .box-title .ul {
+            padding: 17px 13px;
+            padding-left: 26px;
+            list-style-position: outside;
+            margin-bottom: 32px; }
+        #contact .box .form .form-item {
+          margin-bottom: 32px; }
+        #contact .box .form .form-label {
+          font-weight: 700;
+          margin-bottom: 7px;
+          line-height: 1; }
+        #contact .box .form .form-control {
+          height: 41px;
+          border: 1px solid var(--c-gray-3);
+          background-color: var(--c-white);
+          border-radius: 4px; }
+          #contact .box .form .form-control:focus {
+            box-shadow: unset; }
+          #contact .box .form .form-control.textarea {
+            height: 122px; }
+        #contact .box .form .btn {
+          width: 293px;
+          height: 73px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 22px;
+          font-weight: 700;
+          color: var(--c-main);
+          background-color: var(--c-gray-3);
+          border-radius: 100px;
+          border: unset;
+          margin: 0 auto; }
+          #contact .box .form .btn:hover {
+            color: var(--c-gray-3);
+            background-color: var(--c-main); } }
 
-/*# sourceMappingURL=main.css.map */
+.wpcf7-response-output {
+  display: none; }
