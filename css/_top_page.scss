@@ -1,58 +1,206 @@
-#women {
-    .box {
-        .left {
-            .women-title {
-                .women-title__l {
+#banner {
+  padding-left: 220px;
+  position: relative;
 
-                }
-                .women-title__r {
-                    
-                }
-            }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: var(--c-main);
+  }
+  .owl-banner {
+    .item {
+      background-position: center;
+      background-size: cover;
+      height: 607px;
+      .title-group {
+        position: absolute;
+        top: 100px;
+        left: -100px;
+        .t-en {
+          font-size: 68px;
+          color: var(--c-white);
+          font-size: "Roboto", sans-serif;
+          padding-left: 40px;
         }
-        .right {
-            .img {
-
-            }
+        .t-jp {
+          img {
+            width: 660px;
+          }
         }
+      }
     }
+    .owl-dots {
+      position: absolute;
+      left: -45px;
+      bottom: 180px;
+      margin-top: 0;
+      .owl-dot {
+        span {
+          margin: 0 8px 0 0;
+        }
+      }
+    }
+  }
+}
+
+#accumulate {
+  padding: 60px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 292px solid var(--c-main);
+    border-left: 140px solid transparent;
+  }
+
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--c-main);
+    margin-bottom: 16px;
+  }
+  .desc {
+    font-size: 15px;
+    color: var(--c-main);
+    white-space: pre-line;
+  }
+
+  .scroll-logo {
+    position: absolute;
+    top: -78px;
+    right: 52px;
+    z-index: 9;
+    .img {
+      width: 147px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        background: url(./../imgs/yk-text-scroll.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: calc(100% + 62px);
+        height: calc(100% + 60px);
+
+        animation-name: rotate;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#women {
+  background-color: var(--c-main);
+  height: 287px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 55px solid var(--c-white);
+    border-right: 29px solid transparent;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 626px 1fr;
+    height: 100%;
+    .left {
+      .women-title {
+        display: grid;
+        grid-template-columns: 216px 1fr;
+        gap: 32px;
+        padding: 0 50px;
+        color: var(--c-white);
+        white-space: pre-line;
+        align-items: center;
+        height: 100%;
+        .women-title__l {
+          span {
+            background-color: var(--c-white);
+            font-size: 33px;
+            color: var(--c-main);
+            font-weight: bold;
+            line-height: 60px;
+            letter-spacing: 8px;
+          }
+        }
+        .women-title__r {
+          font-size: 15px;
+          line-height: 28px;
+        }
+      }
+    }
+    .right {
+      height: 100%;
+      .img {
+        padding-right: 40px;
+        height: 100%;
+      }
+    }
+  }
 }
 
 #vehicle {
-    background-color: var(--c-pink);
-    padding: 60px 0;
-    .title-group {
-        margin-bottom: 60px;
-        .title {
-            font-size: 28px;
-            font-weight: bold;
-            color: var(--c-main);
-        }
-        .desc-bold {
-            font-size: 33px;
-            font-weight: bold;
-            color: var(--c-main);
-        }
-        .desc {
-            font-size: 15px;
-            color: var(--c-main);
-        }
+  background-color: var(--c-pink);
+  padding: 60px 0;
+  .title-group {
+    margin-bottom: 60px;
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--c-main);
     }
-    .owl-vehicle {
-        .item {
-            .item-img {
-                .img {
-
-                }
-            }
-            .txt {
-                color: var(--c-text);
-                font-weight: bold;
-                text-align: center;
-                padding-top: 8px;
-            }
-        }
+    .desc-bold {
+      font-size: 33px;
+      font-weight: bold;
+      color: var(--c-main);
     }
+    .desc {
+      font-size: 15px;
+      color: var(--c-main);
+    }
+  }
+  .owl-vehicle {
+    .item {
+      .item-img {
+        .img {
+        }
+      }
+      .txt {
+        color: var(--c-text);
+        font-weight: bold;
+        text-align: center;
+        padding-top: 8px;
+      }
+    }
+  }
 }
 
 #transport {
@@ -104,10 +252,21 @@
 }
 
 #damage {
-  background: url(./../imgs/banner-cat.png) no-repeat;
-  background-position: top right;
-  background-size: cover;
-  padding: 40px 0;
+  padding: 30px 0;
+  position: relative;
+  background-color: var(--c-green-2);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 327px solid var(--c-white);
+    border-left: 160px solid transparent;
+  }
+
 
   .box {
     display: grid;
@@ -132,73 +291,73 @@
 }
 
 #greet {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 633px solid var(--c-pink);
+    border-left: 0px solid transparent;
+    border-right: 325px solid transparent;
+    height: 0;
+    width: 60%;
+  }
+  .container-c {
     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        border-top: 633px solid var(--c-pink);
-        border-left: 0px solid transparent;
-        border-right: 325px solid transparent;
-        height: 0;
-        width: 60%;
-    }
-    .container-c {
-        position: relative;
-        z-index: 1;
-    }
-    .box {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 54px;
-        z-index: 1;
-        .left {
-            .desc {
-                font-size: 28px;
-                font-weight: 700;
-                color: var(--c-main);
-                margin-bottom: 24px;
-            }
-            .title {
-                font-weight: 700;
-                font-size: 33px;
-                color: var(--c-main);
-                margin-bottom: 32px;
-            }
-            .content {
-                font-size: 15px;
-                color: var(--c-text);
-                white-space: pre-line;
-            }
-            .signature {
-                padding-top: 60px;
-                display: flex;
-                justify-content: flex-end;
-                .sig-t {
-                    font-size: 15px;
-                    color: var(--c-text);
-                    white-space: pre-line;
-                }
-                .sig-img {
-                    width: 214px;
-                }
-            }
-        }
-        .right {
-            .img {
-                width: 502px;
-                height: 605px;
-            }
-        }
-    }
-    .title-service-trust {
-        color: var(--c-green);
-        font-size: 64px;
-        font-family: 'Roboto';
+    z-index: 1;
+  }
+  .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
+    z-index: 1;
+    .left {
+      .desc {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--c-main);
+        margin-bottom: 24px;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 33px;
+        color: var(--c-main);
+        margin-bottom: 32px;
+      }
+      .content {
+        font-size: 15px;
+        color: var(--c-text);
         white-space: pre-line;
+      }
+      .signature {
+        padding-top: 60px;
+        display: flex;
+        justify-content: flex-end;
+        .sig-t {
+          font-size: 15px;
+          color: var(--c-text);
+          white-space: pre-line;
+        }
+        .sig-img {
+          width: 214px;
+        }
+      }
     }
+    .right {
+      .img {
+        width: 502px;
+        height: 605px;
+      }
+    }
+  }
+  .title-service-trust {
+    color: var(--c-green);
+    font-size: 64px;
+    font-family: "Roboto";
+    white-space: pre-line;
+  }
 }
 
 #company {
@@ -384,9 +543,9 @@
         margin: 0 auto;
 
         &:hover {
-            color: var(--c-gray);
-            background-color: var(--c-text);
-          }
+          color: var(--c-gray);
+          background-color: var(--c-text);
+        }
       }
     }
   }

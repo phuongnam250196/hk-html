@@ -7,373 +7,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HK</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./libs/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./libs/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link href="./libs/fontawesome-free-6.5.1-web/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-
-    <div class="offcanvas offcanvas-start" id="menu-mobile">
-        <div class="offcanvas-header">
-            <button type="button" data-bs-dismiss="offcanvas">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="43" viewBox="0 0 37 43" fill="none">
-                    <path d="M1 11L36.5 32" stroke="white" />
-                    <path d="M36.7183 11.3781L0.781726 31.622" stroke="white" />
-                </svg>
-            </button>
-        </div>
-        <div class="offcanvas-body">
-            <p><a href="#">Springsについて</a></p>
-            <p><a href="#">サービス内容</a></p>
-            <p><a href="#">会社概要</a></p>
-            <p><a href="#">チーム</a></p>
-            <p><a href="#">お問合わせ</a></p>
+    <!-- Header mobile -->
+    <div class="header-fix" id="header-fix">
+        <a href="#">
+            <img src="./imgs/logo.png" alt="Avatar Logo" class="logo-mobile">
+        </a>
+        <div id="toggle" class="toggle-custom">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul class="navbar-nav">
+                <li class="menu-item">
+                    <a class="nav-link" href="#impress">Springsについて</a>
+                </li>
+                <li class="menu-item">
+                    <a class="nav-link" href="#">サービス内容</a>
+                </li>
+                <li class="menu-item">
+                    <a class="nav-link" href="#">会社概要</a>
+                </li>
+                <li class="menu-item">
+                    <a class="nav-link" href="#">チーム</a>
+                </li>
+            </ul>
+            <p><a href="#">お問合わせ</a></p>
+        </nav>
+    </div>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="container-c">
-            <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./imgs/logo.png" alt="Avatar Logo" class="logo">
-                        <img src="./imgs/img-footer.svg" alt="Avatar Logo" class="logo-mobile">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#menu-mobile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="19" viewBox="0 0 39 19" fill="none">
-                            <path d="M0 1H38.5M0 9.5H38.5M0 18.5H38.5" stroke="black" />
-                        </svg>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Springsについて</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">サービス内容</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">会社概要</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">チーム</a>
-                            </li>
-                        </ul>
-                        <a class="btn btn-primary btn-contact" href="#">お問合わせ</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Banner -->
-    <section id="banner">
-        <div class="container-c">
-            <div class="box">
-                <div class="top">
-                    <div class="card left">
-                        <img class="card-img-top" src="./imgs/img-1.jpg" alt="Card image" data-aos="zoom-in">
-                        <div class="card-body">
-                            <h4 class="card-title title-base">豊かな未来への源泉。</h4>
-                            <p class="card-text">未来への飛躍を支える投資や
-                                ビジネスのマッチングなど、
-                                あなたの豊かな未来への
-                                お手伝いいたします。</p>
+    <div class="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="container-c2">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./imgs/logo.png" alt="Avatar Logo" class="logo">
+                        </a>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#impress">Springsについて</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#">サービス内容</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#">会社概要</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#">チーム</a>
+                                </li>
+                            </ul>
+                            <a class="btn btn-primary btn-contact" href="#">
+                                <span>お問合わせ</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="right">
-                        <h4 class="text"><span class="up">The <span class="u">W</span>ellspring to</span> <span
-                                class="down">an Abundant <span class="u">F</span>uture.</span></h4>
-                        <img src="./imgs/img-2.jpg" alt="" class="img" data-aos="zoom-in">
+                </nav>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="owl-carousel owl-theme owl-banner">
+                <div class="item" style="background: url(./imgs/banner-s1.png) no-repeat;">
+                    <div class="title-group">
+                        <div class="t-en">Dedicated to You,</div>
+                        <div class="t-jp"><img src="./imgs/jp-text.png" alt=""></div>
+                        <div class="t-en">Driven by Trust</div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <span class="title">NEWS</span> | <span class="date">2023.11.20</span> <span
-                        class="text">ホームページを更新しました。</span>
+                <div class="item" style="background: url(./imgs/banner-s1.png) no-repeat;">
+                    <div class="title-group">
+                        <div class="t-en">Dedicated to You,</div>
+                        <div class="t-jp"><img src="./imgs/jp-text.png" alt=""></div>
+                        <div class="t-en">Driven by Trust</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Women too -->
-    <section id="women">
-        <div class="box">
-            <div class="left">
-                <div class="women-title">
-                    <div class="women-title__l">女性も
-                        働きやすい
-                        職場です</div>
-                    <div class="women-title__r">顧客に高品質なサービスを提供しつつ、社員が安心して働ける環境づくりを基本方針としています。
-                        女性の活躍推進にも積極的に取り組んでいます。</div>
+        <!-- Accumulating -->
+        <section id="accumulate">
+            <div class="container-c">
+                <h4 class="title">信頼と実績を積み重ね、未来へ</h4>
+                <div class="desc">
+                    当社は1969年の設立以来、主に京浜地区を発着する輸出入品の物流を担い、近年では特に海上コンテナの輸送に力を入れております。 京浜港（東京港、横浜港、川崎港）のコンテナ取扱量は全国の3分の1を誇り、その拡大と共に当社も発展を遂げてきました。日本最大の消費地をバックに今後も当社は変革を続けて参ります。
                 </div>
             </div>
-            <div class="right">
+            <div class="scroll-logo">
                 <div class="img">
-                    <img src="./imgs/img-5.png" alt="">
+                    <img src="./imgs/yk-scroll.png" alt="">
                 </div>
+                
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- vehicle list -->
-    <section id="vehicle">
-        <div class="container-c">
-            <div class="title-group">
-                <h4 class="title">車両一覧</h4>
-                <div class="desc-bold">豊富な車種でお客様のニーズにお応えします。</div>
-                <div class="desc"> 2ｔ、4ｔ、14ｔ、トラクターヘッド、ダンプヘッド、30.48ｔ積載シャーシを揃え、小物から重量物まで対応します。</div>
-            </div>
-        </div>
-        <div class="owl-carousel owl-theme owl-vehicle">
-            <div class="item">
-                <div class="item-img">
-                    <img src="./imgs/img-2.png" alt="" class="img">
-                </div>
-                <div class="txt">14トン積載　ウイング車</div>
-            </div>
-            <div class="item">
-                <div class="item-img">
-                    <img src="./imgs/img-2.png" alt="" class="img">
-                </div>
-                <div class="txt">14トン積載　ウイング車</div>
-            </div>
-            <div class="item">
-                <div class="item-img">
-                    <img src="./imgs/img-2.png" alt="" class="img">
-                </div>
-                <div class="txt">14トン積載　ウイング車</div>
-            </div>
-            <div class="item">
-                <div class="item-img">
-                    <img src="./imgs/img-2.png" alt="" class="img">
-                </div>
-                <div class="txt">14トン積載　ウイング車</div>
-            </div>
-        </div>
-    </section>
-    <style>
-        .owl-vehicle .owl-stage {
-            padding-left: 0px !important;
-        }
-    </style>
-
-    <!-- Container transport -->
-    <section id="transport">
-        <div class="container-c">
+        <!-- Women too -->
+        <section id="women">
             <div class="box">
                 <div class="left">
-                    <h4 class="title">コンテナ輸送</h4>
-                    <div class="desc">
-                        コンテナターミナルとご指定場所との間を速やかに輸送します。
-                         
-                        世界各地から運ばれてくるコンテナは、コンテナターミナル内で通関手続きや保税運送承認を経てからお客様ご指定の場所まで輸送されます。コンテナの中身は食品や飲料、家電、家具などの製品だけでなく、危険品やバラ積みの原料、冷蔵のワインや冷凍のマグロなど様々な貨物があります。 
-                        私たちの経験豊富なドライバーがコンテナターミナルとお客様のご指定場所の間をスピーディーに輸送します。
-
-                        例）
-                        冷凍マグロの運送、フレコン貨物
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="img-l">
-                        <div class="img-l_t">
-                            <div class="img-l_t-l">
-                                <img src="./imgs/img-2.png" alt="" class="img">
-                            </div>
-                            <div class="img-l_t-l">
-                                <img src="./imgs/img-2.png" alt="" class="img">
-                            </div>
+                    <div class="women-title">
+                        <div class="women-title__l">
+                            <span>女性も
+                                働きやすい
+                                職場です</span>
                         </div>
-                        <div class="img-l_b">
-                            <img src="./imgs/img-4.png" alt="" class="img">
-                        </div>
-                    </div>
-                    <div class="img-r">
-                        <img src="./imgs/img-5.png" alt="" class="img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Damaged -->
-    <section id="damage">
-        <div class="container-c">
-            <div class="box">
-                <div class="left">
-                    <img src="./imgs/img-4.png" alt="" class="img">
-                </div>
-                <div class="right">
-                    <h4 class="title-base">令和6年能登半島地震により被害に遭われた
-                        皆さまへ心よりお見舞いを申し上げます</h4>
-                    <!-- <p class="desc">令和6年能登半島地震で、東京都の支援物資を輪島市に届けました。</p> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Greet -->
-    <section id="greet">
-        <div class="container-c">
-            <div class="box">
-                <div class="left">
-                    <h5 class="desc">ご挨拶</h5>
-                    <h4 class="title">運びの原点、
-                        それは信頼と奉仕です。</h4>
-                    <p class="content">海上コンテナの輸送は、かつては貿易港と港頭地区の倉庫間輸送がメインでしたが、現在では港から内陸倉庫、工場、店舗などへの輸送や、時間指定、温度設定など、ニーズは高まるばかりです。
-
-                        加えて労働環境基準も厳しく制限される昨今ですが、当社は安定してサービスを提供できる体制を整えて参りますので、何卒宜しくお願い致します。  </p>
-
-                    <div class="signature">
-                       <div>
-                        <p class="sig-t">代表取締役社長</p>
-                        <img src="./imgs/img-1.png" alt="" class="sig-img">
-                       </div>
+                        <div class="women-title__r">顧客に高品質なサービスを提供しつつ、社員が安心して働ける環境づくりを基本方針としています。
+                            女性の活躍推進にも積極的に取り組んでいます。</div>
                     </div>
                 </div>
                 <div class="right">
                     <div class="img">
-                        <img src="./imgs/img-6.png" alt="">
+                        <img src="./imgs/img-5.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="title-service-trust">Service and Trust.
-                Our Foundation in Every Journey</div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Company profile -->
-    <section id="company">
-        <div class="container-c">
-            <h3 class="title-base">会社概要</h3>
-            <div class="img">
-                <img src="./imgs/banner-s1.png" alt="">
+        <!-- vehicle list -->
+        <section id="vehicle">
+            <div class="container-c">
+                <div class="title-group">
+                    <h4 class="title">車両一覧</h4>
+                    <div class="desc-bold">豊富な車種でお客様のニーズにお応えします。</div>
+                    <div class="desc"> 2ｔ、4ｔ、14ｔ、トラクターヘッド、ダンプヘッド、30.48ｔ積載シャーシを揃え、小物から重量物まで対応します。</div>
+                </div>
             </div>
-            <table class="table table-striped table-company">
-                <tbody>
-                    <tr>
-                        <th>商 号</th>
-                        <td>横浜急送株式会社</td>
-                    </tr>
-                    <tr>
-                        <th>創 立</th>
-                        <td>1969年2月17日</td>
-                    </tr>
-                    <tr>
-                        <th>取引銀行</th>
-                        <td>みずほ銀行、三井住友銀行、横浜銀行、商工組合中央金庫（順不同）</td>
-                    </tr>
-                    <tr>
-                        <th>加盟団体</th>
-                        <td>東京都トラック協会、神奈川県トラック協会、東京港湾福利厚生協会、東京防犯協会連合会 東京港運事業協同組合、東京湾岸交通安全協会、三田交通安全協会、芝法人会、東京商工会議所　　ほか
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+            <div class="owl-carousel owl-theme owl-vehicle">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./imgs/img-2.png" alt="" class="img">
+                    </div>
+                    <div class="txt">14トン積載　ウイング車</div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./imgs/img-2.png" alt="" class="img">
+                    </div>
+                    <div class="txt">14トン積載　ウイング車</div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./imgs/img-2.png" alt="" class="img">
+                    </div>
+                    <div class="txt">14トン積載　ウイング車</div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="./imgs/img-2.png" alt="" class="img">
+                    </div>
+                    <div class="txt">14トン積載　ウイング車</div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .owl-vehicle .owl-stage {
+                padding-left: 0px !important;
+            }
+        </style>
 
-    <!-- Imformation office -->
-    <section id="office">
-        <div class="container-c">
-            <h3 class="title-base">事業所案内</h3>
-            <div id="accordion" class="office-collapse">
-                <div class="card">
-                    <div class="card-header" data-bs-toggle="collapse" href="#collapseOne">
-                        <h5 class="txt">本社</h5> <i class="fa fa-plus"></i>
+        <!-- Container transport -->
+        <section id="transport">
+            <div class="container-c">
+                <div class="box">
+                    <div class="left">
+                        <h4 class="title">コンテナ輸送</h4>
+                        <div class="desc">
+                            コンテナターミナルとご指定場所との間を速やかに輸送します。
+                             
+                            世界各地から運ばれてくるコンテナは、コンテナターミナル内で通関手続きや保税運送承認を経てからお客様ご指定の場所まで輸送されます。コンテナの中身は食品や飲料、家電、家具などの製品だけでなく、危険品やバラ積みの原料、冷蔵のワインや冷凍のマグロなど様々な貨物があります。 
+                            私たちの経験豊富なドライバーがコンテナターミナルとお客様のご指定場所の間をスピーディーに輸送します。
+
+                            例）
+                            冷凍マグロの運送、フレコン貨物
+                        </div>
                     </div>
-                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-                        <div class="card-body">
-                            <div class="list">
-                                <div class="item">〒108-0022　東京都港区海岸3-20-20ヨコソーレインボータワー</div>
-                                <div class="item">TEL：03-5442- 3361</div>
-                                <div class="item">FAX：03-5442-3366</div>
+                    <div class="right">
+                        <div class="img-l">
+                            <div class="img-l_t">
+                                <div class="img-l_t-l">
+                                    <img src="./imgs/img-2.png" alt="" class="img">
+                                </div>
+                                <div class="img-l_t-l">
+                                    <img src="./imgs/img-2.png" alt="" class="img">
+                                </div>
                             </div>
+                            <div class="img-l_b">
+                                <img src="./imgs/img-4.png" alt="" class="img">
+                            </div>
+                        </div>
+                        <div class="img-r">
+                            <img src="./imgs/img-5.png" alt="" class="img">
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" data-bs-toggle="collapse" href="#collapseTwo">
-                        <h5 class="txt">東京営業所</h5> <i class="fa fa-plus"></i>
+            </div>
+        </section>
+
+        <!-- Damaged -->
+        <section id="damage">
+            <div class="container-c">
+                <div class="box">
+                    <div class="left">
+                        <img src="./imgs/img-4.png" alt="" class="img">
                     </div>
-                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-                        <div class="card-body">
-                            <div class="list">
-                                <div class="item">〒108-0022　東京都港区海岸3-20-20ヨコソーレインボータワー</div>
-                                <div class="item">TEL：03-5442- 3361</div>
-                                <div class="item">FAX：03-5442-3366</div>
+                    <div class="right">
+                        <h4 class="title-base">令和6年能登半島地震により被害に遭われた
+                            皆さまへ心よりお見舞いを申し上げます</h4>
+                        <!-- <p class="desc">令和6年能登半島地震で、東京都の支援物資を輪島市に届けました。</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Greet -->
+        <section id="greet">
+            <div class="container-c">
+                <div class="box">
+                    <div class="left">
+                        <h5 class="desc">ご挨拶</h5>
+                        <h4 class="title">運びの原点、
+                            それは信頼と奉仕です。</h4>
+                        <p class="content">
+                            海上コンテナの輸送は、かつては貿易港と港頭地区の倉庫間輸送がメインでしたが、現在では港から内陸倉庫、工場、店舗などへの輸送や、時間指定、温度設定など、ニーズは高まるばかりです。
+
+                            加えて労働環境基準も厳しく制限される昨今ですが、当社は安定してサービスを提供できる体制を整えて参りますので、何卒宜しくお願い致します。  </p>
+
+                        <div class="signature">
+                            <div>
+                                <p class="sig-t">代表取締役社長</p>
+                                <img src="./imgs/img-1.png" alt="" class="sig-img">
                             </div>
                         </div>
                     </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="./imgs/img-6.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" data-bs-toggle="collapse" href="#collapseThree">
+                <div class="title-service-trust">Service and Trust.
+                    Our Foundation in Every Journey</div>
+            </div>
+        </section>
+
+        <!-- Company profile -->
+        <section id="company">
+            <div class="container-c">
+                <h3 class="title-base">会社概要</h3>
+                <div class="img">
+                    <img src="./imgs/banner-s1.png" alt="">
+                </div>
+                <table class="table table-striped table-company">
+                    <tbody>
+                        <tr>
+                            <th>商 号</th>
+                            <td>横浜急送株式会社</td>
+                        </tr>
+                        <tr>
+                            <th>創 立</th>
+                            <td>1969年2月17日</td>
+                        </tr>
+                        <tr>
+                            <th>取引銀行</th>
+                            <td>みずほ銀行、三井住友銀行、横浜銀行、商工組合中央金庫（順不同）</td>
+                        </tr>
+                        <tr>
+                            <th>加盟団体</th>
+                            <td>東京都トラック協会、神奈川県トラック協会、東京港湾福利厚生協会、東京防犯協会連合会 東京港運事業協同組合、東京湾岸交通安全協会、三田交通安全協会、芝法人会、東京商工会議所　　ほか
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Information office -->
+        <section id="office">
+            <div class="container-c">
+                <h3 class="title-base">事業所案内</h3>
+                <div id="accordion" class="office-collapse">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" href="#collapseOne">
+                            <h5 class="txt">本社</h5> <i class="fa fa-plus"></i>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="item">〒108-0022　東京都港区海岸3-20-20ヨコソーレインボータワー</div>
+                                    <div class="item">TEL：03-5442- 3361</div>
+                                    <div class="item">FAX：03-5442-3366</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" href="#collapseTwo">
+                            <h5 class="txt">東京営業所</h5> <i class="fa fa-plus"></i>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="item">〒108-0022　東京都港区海岸3-20-20ヨコソーレインボータワー</div>
+                                    <div class="item">TEL：03-5442- 3361</div>
+                                    <div class="item">FAX：03-5442-3366</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" href="#collapseThree">
                             <h5 class="txt">横浜営業所</h5> <i class="fa fa-plus"></i>
-                    </div>
-                    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-                        <div class="card-body">
-                            <div class="list">
-                                <div class="item">〒108-0022　東京都港区海岸3-20-20ヨコソーレインボータワー</div>
-                                <div class="item">TEL：03-5442- 3361</div>
-                                <div class="item">FAX：03-5442-3366</div>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <div class="list">
+                                    <div class="item">〒108-0022　東京都港区海岸3-20-20ヨコソーレインボータワー</div>
+                                    <div class="item">TEL：03-5442- 3361</div>
+                                    <div class="item">FAX：03-5442-3366</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact us -->
-    <section id="contact">
-        <div class="container-c">
-            <div class="box">
-                <div class="box-title">
-                    <h4 class="title title-base">お問合わせ</h4>
-                    <div class="desc">弊社のホームページをご覧いただき、誠にありがとうございます。
-                        ご質問・ご相談・お見積りなど、お気軽にご連絡ください。
+        <!-- Contact us -->
+        <section id="contact">
+            <div class="container-c">
+                <div class="box">
+                    <div class="box-title">
+                        <h4 class="title title-base">お問合わせ</h4>
+                        <div class="desc">弊社のホームページをご覧いただき、誠にありがとうございます。
+                            ご質問・ご相談・お見積りなど、お気軽にご連絡ください。
+                        </div>
+                        <ul class="ul">
+                            <li>必要事項にご記入いただき、「送信する」を押してください。</li>
+                            <li>３営業日以内に返信させていただきます。</li>
+                        </ul>
                     </div>
-                    <ul class="ul">
-                        <li>必要事項にご記入いただき、「送信する」を押してください。</li>
-                        <li>３営業日以内に返信させていただきます。</li>
-                    </ul>
+
+                    <form action="/action_page.php" class="form">
+                        <div class="form-item">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-item">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd">
+                        </div>
+                        <div class="form-check form-item">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-contact">送信する</button>
+                    </form>
                 </div>
-
-                <form action="/action_page.php" class="form">
-                    <div class="form-item">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="form-item">
-                        <label for="pwd" class="form-label">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                    </div>
-                    <div class="form-check form-item">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-contact">送信する</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <img src="./imgs/logo.png" alt="" class="img">
-        <p class="desc">個人情報保護方針 │サイトのご利用について</p>
-        <p class="copy-right">©横浜急送株式会社 2023</span>
-    </footer>
-    <!-- </div> -->
+        <!-- Footer -->
+        <footer id="footer">
+            <img src="./imgs/logo.png" alt="" class="img">
+            <p class="desc">個人情報保護方針 │サイトのご利用について</p>
+            <p class="copy-right">©横浜急送株式会社 2023</span>
+        </footer>
+    </div>
+
 
     <script src="./libs/jquery-3.5.1.min.js"></script>
     <script src="./libs/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
@@ -411,7 +428,26 @@
                 }
             })
 
-            console.log('$(".collapse") :>> ', $(".collapse.show"));
+            $('.owl-banner').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                items: 1,
+                dots: true,
+            })
+
+            $(document).ready(function () {
+                $('#toggle').click(function () {
+                    $(this).toggleClass('open');
+                    $('#overlay').toggleClass('open');
+                    $('#header-fix').toggleClass('open');
+                });
+                $('#overlay li a').on('click', function () {
+                    $('#overlay').toggleClass('open');
+                    $('#header-fix').toggleClass('open');
+                })
+            })
+
             $(".collapse.show").parent('.card').find(".fa").removeClass("fa-plus").addClass("fa-minus")
             $(".collapse").on('show.bs.collapse', function () {
                 console.log('1 :>> ', 1);
